@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+*{
+    font-family: 'Finlandica Headline', sans-serif;
+}
