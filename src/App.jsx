@@ -1,14 +1,17 @@
 
 import './App.css'
 import ContextProvider from './ContextAPI/ContextApi'
+import Header from './Common/Header'
+import Footer from './Common/Footer'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <ContextProvider>
-       <div className="App">
-        <h1 className='font-bold text-4xl'>Welcome to React</h1>
-      </div>
+      <Header/>
+        <Outlet/>
+      <Footer/>
     </ContextProvider>
   )
 }
